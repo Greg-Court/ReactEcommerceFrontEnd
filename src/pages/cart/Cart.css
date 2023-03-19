@@ -1,0 +1,98 @@
+.cartTitle {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.total {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.cartItems {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cartItem {
+  width: 23%;
+  min-width: 250px;
+  max-width: 350px;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cartItem img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cartItem .description {
+  text-align: center;
+}
+
+.cartItem:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.modifyQty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5em;
+}
+
+.modifyQtyBttn {
+  background-color: transparent;
+  border: 2px solid rgb(19, 19, 19);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 24px; /* Set width and height to the same value to make them square */
+  height: 24px;
+}
+
+.removeFromCartBttn:hover {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Change the number of columns to 2 for tablet screens */
+  .cartItems {
+    justify-content: center;
+  }
+
+  .cartItem {
+    width: 47%;
+    margin: 10px;
+  }
+
+  .cartTitle {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Change the number of columns to 1 for phone screens */
+
+  .cartItems {
+    justify-content: center;
+  }
+
+  .cartItem {
+    width: 80%;
+    margin: 10px;
+  }
+}

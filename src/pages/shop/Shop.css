@@ -1,0 +1,116 @@
+.shopTitle {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .delimiterWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Added this line */
+    flex-direction: column;
+  }
+
+  .delimiter {
+    display: block;
+    margin-top: 2.25em;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+  
+  .products {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product {
+    width: 23%;
+    min-width: 250px;
+    max-width: 350px;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product .description {
+    text-align: center;
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+  }
+
+  .search input {
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    font-size: 1.25em;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Change the number of columns to 2 for tablet screens */
+    .products {
+      justify-content: center;
+    }
+  
+    .product {
+      width: 47%;
+      margin: 10px;
+    }
+    .shopTitle {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Change the number of columns to 1 for phone screens */
+
+
+    .products {
+      justify-content: center;
+    }
+  
+    .product {
+      width: 80%;
+      margin: 10px;
+    }
+  }
+  
